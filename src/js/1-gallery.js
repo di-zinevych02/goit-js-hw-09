@@ -82,7 +82,9 @@ const imagesGalleryItem = images
   })
   .join('');
 
-imagesGalleryList.innerHTML = imagesGalleryItem(images);
+imagesGalleryList.innerHTML = imagesGalleryItem;
 new SimpleLightbox('.gallery a', {
-  /* options */
+  captionsData: 'alt',
+  captionDelay: 250,
+  captionPosition: 'bottom',
 });
